@@ -10,5 +10,10 @@ const Feact = {
         }
 
         return element;
+    },
+
+    render(element, container) {
+        const componentInstance = new FeactDOMComponent(element);
+        return componentInstance.mountComponent(container);
     }
 };
